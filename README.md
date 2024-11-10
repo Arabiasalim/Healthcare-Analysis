@@ -74,7 +74,7 @@ Using looker studio, I developed a comprehensive dashboard, including
 - Additional data on hospital services, patient ID and  patient feedback  would enhance the analysis.
 
 ### Limitations
-- Data Completeness - The datasets only coverd inpatient and outpatient data from 2011-2013, which limits the ability to assess long tem trends or challenges beyond this period.
+- Data Completeness - The datasets only covered inpatient and outpatient data from 2011-2013, which limits the ability to assess long tem trends or challenges beyond this period.
   
 
 ### Reference 
@@ -84,5 +84,5 @@ Using looker studio, I developed a comprehensive dashboard, including
 
 
 ### Conclusion
-This assessment demonstrated the ability to transform raw data into meaningful insights using data engineering, SQL querying, and data visualization techniques. The final dashboard offers a useful tool for monitoring trends and decision-making support.
+This assessment demonstrated the ability to transform raw data into meaningful insights using SQL querying, and data visualization techniques. The final dashboard offers a useful tool for monitoring trends and decision-making support.
 
