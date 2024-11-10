@@ -2,7 +2,14 @@
 
 ## Table of contents 
 - []()
-- 
+- [Introduction](introduction)
+- [Data Overview](data-overview)
+- [Data cleaning/Transformation](Data-cleaning/Transformation)
+- [Data Analysis]()
+- [Data Visualization]()
+- [Challenges]()
+- [Recommendations]()
+- [Conclusion]()
 
 ### Introduction
 The purpose of this analysis is to provide insights into patient charges, provider information ,ICD10 diagnosis and hospital performance for inpatient and outpatient services across the years 2011 to 2013. The assessment aims to showcase skills in data cleaning, SQL querying, data visualization,data enrichment and deriving actionable insights.
@@ -25,6 +32,13 @@ The raw data files were downloaded, converted, and imported into Pandas and Jupy
 
 ### Data sources
 ### Tools
+1. Jupiter Notebook
+2. Pandas
+3. Python
+4. SQLite Studio
+5. Bigquery
+6. Looker Studio
+   
 ### Data cleaning/ preparation
 
 In the initial data preparation phase, we perfoemed the folllowing tasks 
