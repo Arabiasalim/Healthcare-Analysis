@@ -74,28 +74,6 @@ FROM
 #### Combining and Aggregating Outpatient Data
 
 Outpatient data from 2011-2013 was extracted from the SQLite database and uploaded to BigQuery. Similar transformations as described for inpatient data were applied, with CTEs used to combine data across years.
-```
-SELECT 
-  *,
-  2011 AS year
-FROM 
-  `savannah-patients.savannah_dataset.raw_outpatient_charges_2011`
-
-UNION ALL
-SELECT 
-  *,
-  2012 AS year
-FROM 
-  `savannah-patients.savannah_dataset.raw_outpatient_charges_2012`
-
-UNION ALL
-
-SELECT 
-  *,
-  2013 AS year
-FROM 
-  `savannah-patients.savannah_dataset.raw_outpatient_charges_2013`
-```
 
 #### Merging with Hospital General Information
 
@@ -110,9 +88,12 @@ Using looker studio, I developed a comprehensive dashboard, including:
 - top 10 and bottom 10 average charges 
 
 ### Challenges Encountered
-
+- ICD code merging issue- merging ICD codes with the combined inpatient and outpatient data proved difficult due to mismatches.
+ - Resolution/ learning - careful analysis and mapping was applied, ensuring consistent and accurate merging to allow meaningful diagnosis focused visualization.
+- Time constraints-meeting the deadline for the assessment while maintaining high quality analysis and visualizationwas demanding
+ - I managed my time by breaking down the tasks into smaller milestones, prioritizing critical analysis area first and ensuring consistent progress through well defineddaily goals
 ### Recommendations
--Further analysis could be performed on patient demographics to offer deeper insights.
+- Further analysis could be performed on patient demographics to offer deeper insights.
 - Machine learning models may be explored for predictive analytics.
 - Additional data on hospital services, patient ID and  patient feedback  would enhance the analysis.
 
