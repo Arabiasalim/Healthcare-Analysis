@@ -27,7 +27,8 @@ The raw data files were downloaded, converted, and imported into Pandas and Jupy
 - Data Conversion: Converted JSON files to CSV using Pandas.
 - Handling Missing Values: Missing data was addressed by filling nulls where appropriate or removing records when necessary to maintain data integrity.
 - Data Standardization: Standardized date formats, column names, and data types across datasets.
-- Merging Tables: Merged related tables using keys such as Patient ID and year.
+- Merging Tables: Merged related tables using keys such as Patient ID.
+- Using queries to merge Tables.
 
   
 ### Tools
