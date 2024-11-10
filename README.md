@@ -49,6 +49,12 @@ EDA involved exploring the data to answer key questions such as better understan
 
 Using SQL queries with Common Table Expressions (CTEs), inpatient data from 2011, 2012, and 2013 was combined into a single table. A year column was added to distinguish data points across years, and aggregations were performed to obtain total payments and patient trends.
 ```Query
+select * from `savannah_dataset.combined_raw_inpatient_with_year`
+union all
+select * ,
+null as column12,
+null as column13,
+from `savannah_dataset.combined_raw_outpatient_charges_with_year`
 ```
 
 #### Combining and Aggregating Outpatient Data
