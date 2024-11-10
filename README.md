@@ -74,6 +74,28 @@ FROM
 #### Combining and Aggregating Outpatient Data
 
 Outpatient data from 2011-2013 was extracted from the SQLite database and uploaded to BigQuery. Similar transformations as described for inpatient data were applied, with CTEs used to combine data across years.
+```
+SELECT 
+  *,
+  2011 AS year
+FROM 
+  `savannah-patients.savannah_dataset.raw_outpatient_charges_2011`
+
+UNION ALL
+SELECT 
+  *,
+  2012 AS year
+FROM 
+  `savannah-patients.savannah_dataset.raw_outpatient_charges_2012`
+
+UNION ALL
+
+SELECT 
+  *,
+  2013 AS year
+FROM 
+  `savannah-patients.savannah_dataset.raw_outpatient_charges_2013`
+```
 
 #### Merging with Hospital General Information
 
@@ -81,8 +103,9 @@ The combined inpatient and outpatient datasets were joined with hospital general
 
 ### Results/Findings 
 #### Key Visualizations
-Using looker studio, I developed a comprehensive dashboard, including
+Using looker studio, I developed a comprehensive dashboard, including: 
 - Bar Chart comparison of average payments
+ ![bar graph](https://github.com/user-attachments/assets/1c007b94-1b9a-46ab-91f5-5407b1a9ab1a)
 - Trends over time
 - top 10 and bottom 10 average charges 
 
