@@ -85,7 +85,10 @@ Using looker studio, I developed a comprehensive dashboard, including:
 - Bar Chart comparison of average payments
  ![bar graph](https://github.com/user-attachments/assets/1c007b94-1b9a-46ab-91f5-5407b1a9ab1a)
 - Trends over time
-- top 10 and bottom 10 average charges 
+- top 10 and bottom 10 average charges
+- Diagnosis over time
+- top 10 icd chapters and block description by state
+- Top ICD categories by provider 
 
 ### Challenges Encountered
 - ICD code merging issue- merging ICD codes with the combined inpatient and outpatient data proved difficult due to mismatches.
