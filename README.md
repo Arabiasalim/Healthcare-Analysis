@@ -55,7 +55,7 @@ Using SQL queries with Common Table Expressions (CTEs), inpatient data from 2011
 
 Outpatient data from 2011-2013 was extracted from the SQLite database and uploaded to BigQuery. Similar transformations as described for inpatient data were applied, with CTEs used to combine data across years.
 
-### Merging with Hospital General Information
+#### Merging with Hospital General Information
 
 The combined inpatient and outpatient datasets were joined with hospital general information to enhance context and provide a holistic view of hospital performance.
 
