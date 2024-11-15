@@ -43,6 +43,15 @@ The raw data files were downloaded, converted, and imported into Pandas and Jupy
 
 EDA involved exploring the data to answer key questions such as better understanding of the structure, distribution and the quality of the datasets. This step helped identify potential issues and opportunities for deeper analysis
 
+- Average outpatient(inclusive of copayments) and inpatient medicare payments ranked per provider for each year of available data.
+
+- Time series analysis on the average charge on different APC services per provider over the three years
+
+- Geographical analysis by state on affordable providers that offer emergency charges
+
+- Analyze the top 10 prominent inpatient ICD10 diagnosis based on state using their ICD10 Chapter and Block Descriptions
+
+
 ### Data Analysis and SQL Queries in BigQuery
 
 #### Combining and Aggregating Inpatient Data
